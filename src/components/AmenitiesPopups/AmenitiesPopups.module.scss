@@ -1,0 +1,80 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 100000;
+    animation: UP 0.3s ease-in-out forwards;
+}
+
+@keyframes UP {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 59px;
+    box-shadow: -2px 0 2px #fff;
+}
+
+.close-btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 6px;
+    &:hover {
+        background-color: #efe9e9;
+        padding: 0 6px;
+        color: #000;
+        border-radius: 999px;
+    }
+}
+.close-btn {
+    margin-left: 17px !important;
+}
+
+.share_save {
+    margin-right: 17px !important;
+}
+.share,
+.save {
+    text-decoration: underline;
+}
+.icon {
+    margin-right: 5px;
+}
+
+//
+.container {
+    margin-top: 59px;
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-width: thin; /* Tùy chỉnh scrollbar cho Firefox */
+    scrollbar-color: #efe9e9 transparent; /* Màu scrollbar */
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}

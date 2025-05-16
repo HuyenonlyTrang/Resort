@@ -1,0 +1,679 @@
+.wrapper_Bill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fix {
+    width: 1450px;
+}
+
+.header_Bill {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 47px;
+    box-shadow: 0 0 2px #ddd;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    img {
+        width: 110px;
+        height: 47px;
+        object-fit: contain;
+    }
+}
+.container_Bill {
+    margin-top: 100px;
+    min-height: 1000px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+//left
+.left {
+    width: 50%;
+}
+.top_left {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.left_icon {
+    padding: 20px 25px;
+    border-radius: 99px;
+    position: absolute;
+    left: 43px;
+}
+.left_icon:hover {
+    background-color: #ddd;
+}
+.title_left {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.div_left_one {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.text,
+.edit {
+    font-weight: 600;
+}
+.edit {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.tex_one {
+    color: #504e4e;
+}
+
+.div_left_two {
+    display: flex;
+    flex-direction: column;
+}
+//
+.top_payment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+.payment_top {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}
+.payment_top_two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    span {
+        margin-left: 40px;
+    }
+}
+.hover:hover {
+    border: 1px solid #000;
+}
+.tippy_payment {
+    background-color: #ddd;
+    width: 648px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+//
+.payment_input {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.payment_input {
+    label {
+        display: block;
+        padding: 10px;
+        input {
+            width: 100%;
+        }
+    }
+}
+.payment_input .label_one {
+    border-bottom: 1px solid #ddd;
+}
+.text_p {
+    font-size: 1.3rem;
+}
+.nottext_p {
+    padding: 10px 0;
+}
+.payment_div_label {
+    display: flex;
+    label {
+        width: 50%;
+        display: block;
+        padding: 10px;
+    }
+}
+.payment_div_label label:first-child {
+    border-right: 1px solid #ddd;
+}
+.blur,
+.blur_one,
+.blur_two,
+.blur_three,
+.blur_for {
+    background-color: rgba(255, 0, 0, 0.477);
+    color: red;
+    font-weight: 600;
+    border: 1px solid #f40808;
+}
+.blur_one {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.blur_two {
+    border-bottom-left-radius: 10px;
+}
+.blur_three {
+    border-bottom-right-radius: 10px;
+}
+.blur_for {
+    border-radius: 10px;
+}
+.focur {
+    border: 3px solid red;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.focur.blur_one {
+    border-bottom: 1px solid red !important;
+}
+.focur.blur_two {
+    border-right: 1px solid red !important;
+}
+.error {
+    font-size: 1.2rem;
+    color: red;
+    margin-left: 10px;
+}
+.box_one {
+    border-top: 1px solid #ddd;
+    color: #fff;
+}
+.box_one_span {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+}
+.box_one_div {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+//top_mandatory
+.top_mandatory {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.top_mandatory_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .top_button {
+        font-size: 1.5rem;
+        padding: 6px 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+    }
+}
+.top_avt {
+    display: flex;
+    flex-direction: column;
+}
+//
+.add_avt {
+    color: #fff;
+    margin-left: 30px;
+}
+.box_two_div {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    p {
+        text-align: left;
+    }
+    .button_two {
+        display: block;
+        width: 100%;
+        border: 1px solid #ddd;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.5rem;
+        .icon {
+            font-size: 1.8rem;
+            margin-right: 10px;
+        }
+        border: 1px solid transparent !important;
+        background-color: rgb(74, 154, 240);
+    }
+    label {
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
+input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    width: 92%;
+    left: 22px;
+    bottom: 31px;
+}
+
+//box_three
+.box_three {
+    width: 400px;
+    padding: 37px;
+    .box_three_p {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+}
+.box_three_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.box_proper {
+    position: absolute; // ✅ Đảm bảo hiển thị trên các phần tử khác
+    top: 46%;
+    left: 50%;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000; // ✅ Đặt z-index cao để tránh bị che khuất
+    width: 200px; // ✅ Điều chỉnh kích thước nếu cần
+}
+
+.box_one_xacminh {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.div_phone_input {
+    display: flex;
+    font-size: 1.5rem;
+    span {
+        margin-right: 5px;
+        color: #ddd;
+    }
+    input {
+        font-size: 1.5rem;
+    }
+}
+.black {
+    color: #000 !important;
+}
+
+//top_pay
+.top_pay {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.div_pay {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+input[type='checkbox'] {
+    opacity: 0;
+}
+
+.round {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 99px;
+    height: 0;
+    position: relative;
+}
+.round_two {
+    display: none;
+}
+.icon_round {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 2.6rem;
+    display: block;
+}
+.div_pay_one {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.top_cancel {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+//standard
+.top_standard {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+.bottom_left {
+    padding: 30px 0;
+    p {
+        font-size: 1.3rem;
+    }
+    .bottom_button {
+        font-size: 2rem;
+        background-color: red;
+        color: white;
+        padding: 15px 10px;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+}
+.span_note {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+//right
+.right {
+    position: relative;
+}
+.box_right {
+    position: sticky;
+    top: 100px;
+    min-width: 365px;
+    min-height: 272px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 78px 0;
+}
+.top_right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    img {
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+    }
+    .div_right {
+        display: flex;
+        gap: 10px;
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    .heading {
+        font-weight: 600;
+    }
+    .style {
+        color: #7d7a7a;
+        font-size: 1.4rem;
+    }
+}
+.center_right {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.center_div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.bottom_right {
+    padding-top: 20px;
+}
+
+//footer_bottom
+.footer_bottom {
+    width: 100%;
+    height: 47px;
+    background-color: #d1cdcd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+//
+.text_two {
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+//
+.box_pay {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 570px;
+    border-top: 1px solid #fff;
+    color: white;
+    h2 {
+        margin: 10px 0;
+    }
+}
+
+//box_left
+.box_cancel {
+    width: 570px;
+    color: white;
+}
+.before,
+.after {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #706e6e;
+    gap: 50px;
+}
+.box_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right_box {
+    flex: 1;
+}
+
+///
+.noiquy {
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Tùy chỉnh scrollbar cho Firefox */
+    scrollbar-color: #efe9e9 transparent; /* Màu scrollbar */
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+.note_div_one {
+    color: white;
+    margin: 20px 0;
+}
+.note_div_two p,
+.note_div_three p {
+    font-weight: 600;
+    color: white;
+    margin: 10px 0;
+    font-size: 1.7rem;
+}
+.note_div_two div,
+.note_div_three div {
+    padding: 30px 0;
+    color: #fff;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #ddd;
+    .item_icon {
+        font-size: 2rem;
+    }
+}
+.note_div_two div:last-child,
+.note_div_three div:last-child {
+    border-bottom: none;
+}
+.item_icon {
+    margin-right: 10px;
+}
+.span_two {
+    display: flex;
+    margin-left: 30px;
+    color: #ddd;
+    font-size: 1.5rem;
+    width: 700px;
+}
+
+//box_ten
+.box_ten_chinhsach {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+}
+.box_ten {
+    width: 570px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .span_note {
+        color: white;
+    }
+}
+
+.box_tinhphi {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 570px;
+    color: white;
+}
+
+.text_three {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+//
+.customs-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #fff;
+}
+.customs-item-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button {
+        color: white;
+    }
+}
+
+//
+.box_cutoms {
+    width: 570px;
+    color: white;
+    .box_cutoms_p {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+}
+.box_bottom {
+    display: flex;
+    justify-content: space-between;
+    span {
+        cursor: pointer;
+    }
+}
+
+//
+.box_twelve {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+        margin-right: 10px;
+        width: 130px;
+        color: white;
+        font-size: 2rem;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+.box_twelve_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box_twelve_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    span:hover {
+        background-color: #dddddd44;
+    }
+}
+:global(.date_one_twelve > .litepicker .container__months .month-item) {
+    background-color: #333;
+    color: white;
+}
+:global(.date_one_twelve > .litepicker .container__days .day-item) {
+    color: white !important;
+}

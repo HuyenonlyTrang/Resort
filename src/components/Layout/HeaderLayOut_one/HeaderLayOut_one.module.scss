@@ -1,0 +1,36 @@
+.header {
+    padding: 15px 5px;
+    box-shadow: -1px 1px 2px #333;
+}
+.header_one {
+    display: flex;
+    justify-content: center;
+}
+.header_width {
+    width: 1400px;
+}
+.header_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Image {
+    width: 120px;
+    img {
+        width: 100%;
+    }
+}
+
+.help {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 276px;
+    .help_icon {
+        font-size: 4rem;
+    }
+    .help_span {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}

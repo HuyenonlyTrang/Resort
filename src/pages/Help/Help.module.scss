@@ -1,0 +1,269 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 1060px;
+}
+.top_help {
+    text-align: center;
+    margin: 30px 0;
+}
+.h1 {
+    font-size: 4rem;
+}
+.box_input {
+    padding: 20px;
+    gap: 5px;
+    display: inline-flex;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 30px;
+    margin: 10px;
+    align-items: center;
+
+    input {
+        width: 350px;
+        font-size: 1.8rem;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .search {
+        position: absolute;
+        right: 10px;
+        background-color: red;
+        padding: 10px 11px;
+        border-radius: 50px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: white;
+        width: 44px; // Mặc định thu nhỏ
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    &:focus-within .search {
+        width: 150px; // Khi input focus hoặc search được click thì mở rộng
+    }
+}
+.show {
+    box-shadow: 0 0 2px red;
+}
+
+.help_list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    border-bottom: 1px solid #000;
+    padding: 5px 0;
+    li {
+        color: #767575;
+        margin-left: -10px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+    .active {
+        color: #000;
+        font-weight: 600;
+    }
+}
+
+.forward,
+.article {
+    padding: 30px 0;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.box_help_one {
+    display: flex;
+    gap: 30px;
+}
+
+//verify
+.verify,
+.unite {
+    width: 350px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.verify_top,
+.verify_center,
+.verify_bottom,
+.unite_top,
+.unite_bottom {
+    padding: 10px;
+}
+
+.verify_top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: orangered;
+        font-weight: 600;
+    }
+    p {
+        color: #534e4e;
+    }
+}
+.verify_center,
+.verify_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    white-space: nowrap;
+    span {
+        font-size: 1.5rem;
+    }
+}
+.verify_bottom {
+    border: none;
+}
+
+// unite
+.unite_top {
+    height: 250px;
+    p {
+        color: #534e4e;
+    }
+    .unite_p {
+        font-weight: 600;
+    }
+}
+.unite_bottom {
+    border-top: 1px solid #000;
+}
+
+//lead
+.lead {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+.top_lead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        text-align: end;
+    }
+    .lead_icon {
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+}
+
+.lead_img {
+    display: flex;
+    gap: 20px;
+}
+.top_lead {
+    margin-bottom: 30px;
+}
+.lead_container {
+    min-width: 254px;
+    img {
+        width: 100%;
+        height: 256px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+.article_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.article_box {
+    width: 358px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #393737;
+    a {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: #000;
+    padding: 30px 0;
+}
+.container {
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+.container_box {
+    display: flex;
+    gap: 15px;
+}
+
+.discover_left {
+    width: 358px;
+    height: 100%;
+    background-color: rgb(54, 53, 53);
+    border-radius: 10px;
+    img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .title_discover {
+        padding: 10px;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    .title_p_one {
+        font-weight: 600;
+    }
+}
+
+.discover_right {
+    width: 358px;
+    height: 100%;
+    p {
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.6rem;
+        color: white;
+        background-color: #76757534;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+.text_link {
+    color: white;
+    text-decoration: underline;
+}

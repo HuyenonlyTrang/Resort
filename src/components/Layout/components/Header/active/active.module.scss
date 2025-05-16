@@ -1,0 +1,118 @@
+.action {
+    display: flex;
+}
+.action_hosting {
+    align-items: center;
+    gap: 20px;
+}
+
+.avater {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 99px;
+}
+.nenu_hosting {
+    padding: 4px;
+    border: 1px solid #333;
+    border-radius: 99px;
+    line-height: 5px;
+}
+
+.menu_bars {
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
+.menu_icon {
+    font-size: 2rem;
+    padding: 5px;
+}
+.bell_icon {
+    font-size: 2rem;
+    padding: 4px 5px;
+}
+
+//
+.language {
+    width: 930px;
+    height: 600px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* Tùy chỉnh scrollbar cho Firefox */
+    scrollbar-color: #efe9e9 transparent; /* Màu scrollbar */
+    &::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+.language_header {
+    color: #c8c5bf;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1.5rem;
+    span {
+    }
+    .language_header_title {
+        margin-right: 10px;
+        color: #fff;
+    }
+}
+.language_box {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 39px 0;
+    padding: 10px;
+    background-color: #3d3c3c;
+    border-radius: 10px;
+    div {
+        color: #fff;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.language_dexuat,
+.language_luachon {
+    color: white;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        margin: 20px 0;
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        width: 200px;
+        .language_dexuat_one,
+        .language_dexuat_two {
+            font-size: 1.5rem;
+        }
+        .language_dexuat_two {
+            font-size: 1.4rem;
+            color: #c4c4c4;
+        }
+    }
+    li:hover {
+        background-color: #dddddd4e;
+        border-radius: 10px;
+    }
+}

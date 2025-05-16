@@ -1,0 +1,22 @@
+.map-container {
+    min-width: 400px;
+}
+.customs-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    &:hover {
+        background-color: #f5f5f5;
+        cursor: pointer;
+    }
+}
+
+.customs-item-right {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 1.8rem;
+        margin: 0 5px;
+    }
+}

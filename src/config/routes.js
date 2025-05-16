@@ -1,0 +1,17 @@
+export const RouteConfig = {
+    Home: '/',
+    Post: '/post',
+    Search: '/search',
+    Symbol: '/symbol',
+    ProfileHome: '/profileHome/:id',
+    ProfileSymbol: '/profileSymbol/:id',
+    User: '/user',
+    Bill: '/bill',
+    Messages: '/messages',
+    Notifications: '/notifications',
+    Trip: '/trip',
+    Help: '/help',
+    HelpSearch: '/helpsearch',
+    Hosting: '/hosting',
+    HostingMessage: '/hosting/message',
+};

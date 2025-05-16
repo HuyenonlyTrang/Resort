@@ -1,0 +1,111 @@
+.content_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+    gap: 33px; /* Khoảng cách giữa các mục */
+}
+.content_item {
+    position: relative;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 306px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+.content_item_info {
+}
+.content_item_info {
+    display: flex;
+    flex-direction: column;
+}
+.title_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.kilome,
+.month {
+    font-size: 1.5rem;
+    color: #333;
+}
+.price {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+//scoll
+.scoll {
+    position: fixed;
+    bottom: 13px;
+    left: 50%;
+    border: 1px solid #333;
+    border-radius: 33px;
+    padding: 6px;
+    background-color: #fff;
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+    span {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+.shows {
+    display: flex;
+    opacity: 1;
+}
+.icon {
+    margin-left: 5px;
+    color: #1f1f1e;
+    font-size: 1.5rem;
+}
+
+.box {
+    display: none;
+}
+.left,
+.right {
+    padding: 15px;
+    border: 1px solid #000;
+}
+.left {
+    position: absolute;
+    top: 32%;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    top: 32%;
+    right: 0;
+}
+
+.content_item:hover .box {
+    display: block;
+}
+
+// responsive
+
+//PC
+@media (max-width: 1399px) {
+    .content_wrapper {
+        grid-template-columns: repeat(3, 1fr); /* Chỉ hiển thị 1 cột */
+    }
+}
+//Table
+@media (min-width: 600px) and (max-width: 1023px) {
+    /* Màn hình nhỏ hơn */
+    .content_wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Chỉ hiển thị 2 cột */
+    }
+}
+//Mobile
+@media (max-width: 600px) {
+    .content_wrapper {
+        grid-template-columns: repeat(1, 1fr); /* Chỉ hiển thị 1 cột */
+    }
+}

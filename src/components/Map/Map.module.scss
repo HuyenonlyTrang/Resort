@@ -1,0 +1,16 @@
+.button_plus {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    gap: 10px;
+    background-color: #333;
+    .minus {
+        padding: 10px 15px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,25 @@
+.map-container {
+    width: 365px;
+}
+.map-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map-item {
+    padding-top: 10px;
+    img {
+        border-radius: 2px;
+        margin: 0 10px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    h3 {
+        margin-left: 12px;
+        font-size: 1.2rem;
+    }
+    &:hover {
+        background-color: rgb(221, 214, 214);
+    }
+}
